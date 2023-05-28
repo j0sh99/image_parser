@@ -1,0 +1,9 @@
+# Ignore compiled object files and executables
+*.o
+*.out
+
+# Ignore test files
+1.caff
+2.caff
+3.caff
+caff_files.zip
