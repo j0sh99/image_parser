@@ -88,8 +88,8 @@ void read_ciff(FILE* file){
     height = le64toh(height);
 
     // check size
-    //if ( content_size != (width*height)*3 )
-    //    return;
+    if ( content_size != (width*height)*3 )
+        return;
 
     char* caption_and_tags = calloc(header_size - 36, 1);
     if (fread(caption_and_tags, 1, header_size - 36, file) != header_size - 36) return;
